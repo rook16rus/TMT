@@ -1,0 +1,30 @@
+.intro {
+  display: flex;
+  flex-grow: 1;
+
+  color: #fff;
+
+  &__slide {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 4rem 4rem 5.8rem;
+  }
+
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  &__intro-title {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: normal;
+    color: var(--pale-white);
+  }
+}
