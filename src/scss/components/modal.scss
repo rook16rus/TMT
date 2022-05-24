@@ -40,15 +40,11 @@
     position: relative;
 
     padding: 4rem;
-
-    background-color: $modal-bg-color;
   }
 
   &__close {
     position: absolute;
     bottom: 100%;
     right: 0;
-
-    color: $modal-bg-color;
   }
 }

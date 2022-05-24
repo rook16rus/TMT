@@ -1,25 +1,3 @@
 {
-    "title": "Главная страница",
-    "socials": [
-        {
-            "name": "Instagram",
-            "icon": "#instagram",
-            "link": "#"
-        },
-        {
-            "name": "YouTube",
-            "icon": "#youtube",
-            "link": "#"
-        },
-        {
-            "name": "Facebook",
-            "icon": "#facebook",
-            "link": "#"
-        },
-        {
-            "name": "VK",
-            "icon": "#vk",
-            "link": "#"
-        }
-    ]
+
 }

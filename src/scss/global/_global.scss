@@ -28,8 +28,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: 'Stolzl', sans-serif;
-    color: var(--text-color);
+    font-family: 'Onest', sans-serif;
+    color: var(--primary);
 }
 
 main {
@@ -125,17 +125,7 @@ a {
     background-color: transparent;
     text-decoration: none;
     transition: color 0.2s;
-    &:link,
-    &:visited {
-        color: inherit;
-    }
-}
-
-a:where(:not[class]) {
-    &:link,
-    &:visited {
-        color: var(--primary-color);
-    }
+    color: inherit;
 }
 
 svg {
@@ -178,10 +168,6 @@ td,
 th {
     text-align: left;
     vertical-align: top;
-}
-
-.visually-hidden {
-    @include visuallyHidden();
 }
 
 .no-scroll {

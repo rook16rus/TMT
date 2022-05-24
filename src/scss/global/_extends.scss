@@ -1,10 +1,6 @@
-%secondary-ff {
-  font-family: 'Circe', sans-serif;
-}
-
 // Заголовки
 %fs-h1 {
-  @include clamp(24, 43);
+  @include clamp(18, 22);
   text-transform: uppercase;
   font-weight: 500;
   line-height: 1.3;

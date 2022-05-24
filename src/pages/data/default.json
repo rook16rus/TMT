@@ -1,0 +1,43 @@
+{
+  "menu": [
+    {
+      "link": "#",
+      "name": "О нас",
+      "active": false
+    },
+    {
+      "link": "#",
+      "name": "Услуги",
+      "active": false
+    },
+    {
+      "link": "#",
+      "name": "Портфолио",
+      "active": false
+    },
+    {
+      "link": "#",
+      "name": "Видео",
+      "active": false
+    },
+    {
+      "link": "#",
+      "name": "Контакты",
+      "active": false
+    }
+  ],
+  "socials": [
+    {
+      "link": "#",
+      "svg": "inst-icon"
+    },
+    {
+      "link": "#",
+      "svg": "phone-icon"
+    },
+    {
+      "link": "#",
+      "svg": "mail-icon"
+    }
+  ]
+}
