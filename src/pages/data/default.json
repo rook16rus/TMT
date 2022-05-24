@@ -39,5 +39,19 @@
       "link": "#",
       "svg": "mail-icon"
     }
+  ],
+  "aboutNav": [
+    {
+      "name": "Мастерская",
+      "active": true
+    },
+    {
+      "name": "Награды",
+      "active": false
+    },
+    {
+      "name": "Публикации",
+      "active": false
+    }
   ]
 }

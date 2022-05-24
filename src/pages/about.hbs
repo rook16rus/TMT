@@ -1,0 +1,115 @@
+{{#extend "layout"}}
+    {{#content "main"}}
+
+        <section class="about">
+            <div class="container">
+                <div class="about__wrapper">
+                    <nav class="about__nav">
+                        <h1 class="about__title main-title">О нас</h1>
+                        <ul class="about__nav-list">
+                            {{#each aboutNav }}
+                                <li class="about__nav-item{{#if this.active }} active{{/if}}">
+                                    <a href="#">{{this.name}}</a>
+                                </li>
+                            {{/each}}
+                        </ul>
+                    </nav>
+                    <div class="about__body">
+                        <div class="about__author-info">
+                            <div class="about__author-img">
+                                <img src="img/author.jpg" alt="Авторы компании">
+                            </div>
+                            <div class="about__author-content">
+                                <div class="about__author-block">
+                                    <h2 class="about__author-title section-title">Виктор Степанович Токарев</h2>
+                                    <div class="about__author-achievements">
+                                        <ul class="about__author-achievements-list">
+                                            {{#each viktorAchievements }}
+                                                <li class="about__author-achievement">
+                                                    <span class="about__author-achievement-date">{{this.date}}</span>
+                                                    <p class="about__author-achievement-text">{{this.text}}</p>
+                                                </li>
+                                            {{/each}}
+                                        </ul>
+                                        <div class="about__author-grades">
+                                            <h3 class="about__author-grades-title">Почётные звания</h3>
+                                            <ul class="about__author-grades-list">
+                                                {{#each viktorGrades }}
+                                                    <li class="about__author-grade">{{this}}</li>
+                                                {{/each}}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="about__author-block">
+                                    <h2 class="about__author-title section-title">Гульсинэ Шавкатовна Токарева</h2>
+                                    <div class="about__author-achievements">
+                                        <ul class="about__author-achievements-list">
+                                            {{#each gulsineAchievements }}
+                                                <li class="about__author-achievement">
+                                                    <span class="about__author-achievement-date">{{this.date}}</span>
+                                                    <p class="about__author-achievement-text">{{this.text}}</p>
+                                                </li>
+                                            {{/each}}
+                                        </ul>
+                                        <div class="about__author-grades">
+                                            <h3 class="about__author-grades-title">Почётные звания</h3>
+                                            <ul class="about__author-grades-list">
+                                                {{#each gulsineGrades }}
+                                                    <li class="about__author-grade">{{this}}</li>
+                                                {{/each}}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="about__lead">
+                            ООО «ТМТ» — детище архитекторов Гульсинз и Виктора Токаревых. Деятельность компании
+                            всегда была направлена на проектирование уникальных объектов общественного назначения, а
+                            также высоко комфортных жилых комплексов, отличающихся индивидуальными архитектурными
+                            решениями. Кроме того, одним из
+                            главных приоритетов мастерской является соблюдение авторских решений при реализации
+                            проекта, что обеспечивается тщательным архитектурным надзором и участием в управлении
+                            проектом в ходе строительства. Этот фактор обуславливает особое положение компании на
+                            рынке проектирования общественных
+                            комплексов и высококомфортной жилой недвижимости Татарстана.
+                        </p>
+                        <div class="about__text-wrapper">
+                            <p>
+                                000 «ТМТ» создано в 1990 году. За тридцатилетнюю историю компании её создатели стали
+                                авторами проектов многих достопримечательностей Казани и других городов. Основная
+                                деятельность компании — архитектурно-строительное проектирование зданий и комплексов
+                                жилого и общественного назначения, а также градостроительное проектирование,
+                                научно-исследовательские разработки. Деятельность компании охватывает теоретические
+                                и научно-практические разработки, посвящённые градостроительному развитию. В этом
+                                направлении были созданы проекты, в частности, эскизный проект планировки и
+                                застройки Правобережья реки Казанки, а также такие научно-исследовательские работы,
+                                как «Структурно-функциональная организация Казанской градостроительной системы»,
+                                «Реорганизация
+                                структуры управления градостроительной деятельностью в Республике Татарстан»,
+                                «Концепция градостроительного развития г; Казани» и многих др.
+                            </p>
+                            <p>
+                                Миссией ООО «ТМТ» является создание уникальных проектов и установление более высокой
+                                планки качества при проектировании каждого нового объекта. Стратегия компании —
+                                чёткое выполнение своих функций проектировщика на каждом этапе процесса: создание
+                                концепции (идеи), способ передачи идеи (воплощение) и авторский надзор. Команда
+                                компании руководствуется целевыми показателями деятельности — высокое качество
+                                проекта и процесса по созданию объекта как самоцель, соответствие показателей
+                                проекта внутренним представлениям о высоком уровне качества.
+                            </p>
+                            <p>
+                                Руководители мастерской успешно совмещают проектную и педагогическую деятельность,
+                                считая, что сочетание разнообразных форм профессиональной
+                                реализации — один из залогов успешного творчества и созвучия современному миру с его
+                                потребностями, меняющимися взглядами и новой философией жизни
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    {{/content}}
+{{/extend}}
