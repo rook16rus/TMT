@@ -1,19 +1,16 @@
 // Заголовки
 %fs-h1 {
   @include clamp(22, 22);
-  text-transform: uppercase;
   font-weight: 500;
   line-height: normal;
 }
 %fs-h2 {
   @include clamp(22, 22);
-  text-transform: uppercase;
   font-weight: 500;
   line-height: normal;
 }
 %fs-h3 {
   @include clamp(11, 11);
-  text-transform: uppercase;
   font-weight: 500;
   line-height: 1;
 }

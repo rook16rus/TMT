@@ -39,5 +39,6 @@
 }
 
 .main-title {
+    text-transform: uppercase;
     @extend %fs-h1;
 }
