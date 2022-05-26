@@ -1,0 +1,24 @@
+{
+  "contacts": [
+    {
+      "title": "Адрес",
+      "address": "420012, г. Казань, ул. Ульянова-Ленина, дом 67/2"
+    },
+    {
+      "title": "Время работы",
+      "time": "ПН-ПТ  08:00-17:00\nСБ-ВС  Выходной"
+    },
+    {
+      "title": "",
+      "href": "#",
+      "linkText": "",
+      "address": "",
+      "time": ""
+    },
+    {
+      "title": "Эл.Почта",
+      "href": "mailto:tmt-gv@mail.ru",
+      "linkText": "tmt-gv@mail.ru"
+    }
+  ]
+}
