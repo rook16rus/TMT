@@ -1,0 +1,25 @@
+{{#extend "layout"}}
+    {{#content "main"}}
+
+        <section class="video">
+            <div class="container">
+                <div class="video__wrapper">
+                    <div class="video__body">
+                        <ul class="video__list">
+                            {{#each video }}
+                                <li class="video__item">
+                                    <a class="video__preview" href="#">
+                                        <img src="{{this.img}}" alt="Превью видео">
+                                    </a>
+                                    <h3 class="video__title">{{this.title}}</h3>
+                                    <span class="video__time">{{this.time}}</span>
+                                </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    {{/content}}
+{{/extend}}
