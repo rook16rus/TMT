@@ -53,5 +53,31 @@
       "name": "Публикации",
       "active": false
     }
+  ],
+  "portfolioNav": [
+    {
+      "name": "Все проекты",
+      "active": true
+    },
+    {
+      "name": "Общественные",
+      "active": false
+    },
+    {
+      "name": "Градо",
+      "active": false
+    },
+    {
+      "name": "Жилые",
+      "active": false
+    },
+    {
+      "name": "Офисы и деловые центры",
+      "active": false
+    },
+    {
+      "name": "Интерьеры",
+      "active": false
+    }
   ]
 }

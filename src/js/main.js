@@ -10,6 +10,7 @@ import editableTextContainer from './custom/editableTextContainer';
 import initSliders from "./custom/initSliders";
 import verticalScrollSlider from "./build-in/verticalScrollSlider";
 import fixedBlock from "./build-in/fixedBlock";
+import projectSlider from "./build-in/projectSlider";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     anchorLinks();
     verticalScrollSlider();
     fixedBlock();
+    projectSlider();
 
     // custom
     initSliders();

@@ -1,0 +1,62 @@
+{{#extend "layout"}}
+    {{#content "main"}}
+
+        <section class="portfolio-single-single">
+            <div class="container">
+                <div class="portfolio-single__wrapper">
+                    <nav class="portfolio-single__nav">
+                        <h1 class="portfolio-single__title main-title">Портфолио</h1>
+                        <ul class="portfolio-single__nav-list">
+                            {{#each portfolioNav }}
+                                <li class="portfolio-single__nav-item{{#if this.active }} active{{/if}}">
+                                    <a href="#">{{this.name}}</a>
+                                </li>
+                            {{/each}}
+                        </ul>
+                        <div class="portfolio-single__info">
+                            {{#each portfolioInfo }}
+                                <div class="portfolio-single__info-block">
+                                    <h3 class="portfolio-single__info-title">{{this.title}}</h3>
+                                    <p class="portfolio-single__info-text">{{this.text}}</p>
+                                </div>
+                            {{/each}}
+                        </div>
+                    </nav>
+                    <div class="portfolio-single__body">
+                        <div class="portfolio-single__current-img swiper">
+                            <div class="swiper-wrapper">
+                                {{#each portfolioImg }}
+                                    <div class="swiper-slide">
+                                        <img src="{{this.img}}" alt="Фото проекта">
+                                    </div>
+                                {{/each}}
+                            </div>
+                            <div class="js-slider-navigation">
+                                <button class="swiper-button-prev js-prev-slide">
+                                    <svg>
+                                        <use xlink:href="#arrow-icon"></use>
+                                    </svg>
+                                </button>
+                                <button class="swiper-button-next js-next-slide">
+                                    <svg>
+                                        <use xlink:href="#arrow-icon"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-single__gallery swiper">
+                            <div class="swiper-wrapper">
+                                {{#each portfolioImg }}
+                                    <div class="swiper-slide">
+                                        <img src="{{this.img}}" alt="Фото проекта">
+                                    </div>
+                                {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    {{/content}}
+{{/extend}}
