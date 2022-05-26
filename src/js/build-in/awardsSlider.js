@@ -36,16 +36,20 @@ export default function awardsSlider() {
     /*  */
 
     const awardsSlides = document.querySelectorAll('.about__awards-slide');
-    const averageHeight = awardsSwiper.height / awardsSlides.length;
+    const swipePosition = 200;
+    window.activeSlide = null;
 
     window.addEventListener('scroll', () => {
         coordsCheck(imgSliderInner, imgSlider, layout);
 
-        const a = (layout.getBoundingClientRect().top + window.pageYOffset) - window.scrollY;
-        if (a < 0) {
-            const activeIndex = Math.floor(Math.abs(a) / (averageHeight + 25));
-            imgSwiper.slideTo(activeIndex);
-        }
+        awardsSlides.forEach((slide, index) => {
+            if (slide.getBoundingClientRect().top <= swipePosition && slide.getBoundingClientRect().bottom > swipePosition) {
+                if (slide !== activeSlide) {
+                    window.activeSlide = slide;
+                    imgSwiper.slideTo(index);
+                }
+            }
+        })
     })
 }
 
