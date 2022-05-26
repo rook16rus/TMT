@@ -8,7 +8,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import editableTextContainer from './custom/editableTextContainer';
 import initSliders from "./custom/initSliders";
-import awardsSlider from "./build-in/awardsSlider";
+import verticalScrollSlider from "./build-in/verticalScrollSlider";
+import fixedBlock from "./build-in/fixedBlock";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,7 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
     detectTouch();
     setScrollbarWidth();
     anchorLinks();
-    awardsSlider();
+    verticalScrollSlider();
+    fixedBlock();
 
     // custom
     initSliders();
