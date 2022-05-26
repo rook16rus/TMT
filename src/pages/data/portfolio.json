@@ -1,0 +1,110 @@
+{
+  "portfolioNav": [
+    {
+      "name": "Все проекты",
+      "active": true
+    },
+    {
+      "name": "Общественные",
+      "active": false
+    },
+    {
+      "name": "Градо",
+      "active": false
+    },
+    {
+      "name": "Жилые",
+      "active": false
+    },
+    {
+      "name": "Офисы и деловые центры",
+      "active": false
+    },
+    {
+      "name": "Интерьеры",
+      "active": false
+    }
+  ],
+  "portfolio": [
+    {
+      "img": "img/project-1.jpg",
+      "description": "ЖК «Вишневый сад» (1-3 очередь), Казань"
+    },
+    {
+      "img": "img/project-2.jpg",
+      "description": "ЖК «Вишневый сад» (1-3 очередь), Казань"
+    },
+    {
+      "img": "img/project-3.jpg",
+      "description": "ЖК «Вишневый сад» (1-3 очередь), Казань"
+    },
+    {
+      "img": "img/project-4.jpg",
+      "description": "ЖК «Вишневый сад» (1-3 очередь), Казань"
+    },
+    {
+      "img": "img/project-5.jpg",
+      "description": "ЖК «Вишневый сад» (1-3 очередь), Казань"
+    },
+    {
+      "img": "img/project-6.jpg",
+      "description": "ЖК «Вишневый сад» (1-3 очередь), Казань"
+    },
+    {
+      "img": "img/project-7.jpg",
+      "description": "ЖК «Вишневый сад» (1-3 очередь), Казань"
+    },
+    {
+      "img": "img/project-8.jpg",
+      "description": "ЖК «Вишневый сад» (1-3 очередь), Казань"
+    },
+    {
+      "img": "img/project-9.jpg",
+      "description": "ЖК «Вишневый сад» (1-3 очередь), Казань"
+    },
+    {
+      "img": "img/project-10.jpg",
+      "description": "ЖК «Вишневый сад» (1-3 очередь), Казань"
+    },
+    {
+      "img": "img/project-11.jpg",
+      "description": "ЖК «Вишневый сад» (1-3 очередь), Казань"
+    },
+    {
+      "img": "img/project-12.jpg",
+      "description": "ЖК «Вишневый сад» (1-3 очередь), Казань"
+    },
+    {
+      "img": "img/project-13.jpg",
+      "description": "ЖК «Вишневый сад» (1-3 очередь), Казань"
+    },
+    {
+      "img": "img/project-14.jpg",
+      "description": "ЖК «Вишневый сад» (1-3 очередь), Казань"
+    },
+    {
+      "img": "img/project-15.jpg",
+      "description": "ЖК «Вишневый сад» (1-3 очередь), Казань"
+    },
+    {
+      "img": "img/project-16.jpg",
+      "description": "ЖК «Вишневый сад» (1-3 очередь), Казань"
+    },
+    {
+      "img": "img/project-17.jpg",
+      "description": "ЖК «Вишневый сад» (1-3 очередь), Казань"
+    },
+    {
+      "img": "img/project-18.jpg",
+      "description": "ЖК «Вишневый сад» (1-3 очередь), Казань"
+    },
+    {
+      "img": "img/project-19.jpg",
+      "description": "ЖК «Вишневый сад» (1-3 очередь), Казань"
+    },
+    {
+      "img": "img/project-20.jpg",
+      "description": "ЖК «Вишневый сад» (1-3 очередь), Казань"
+    }
+  ]
+}

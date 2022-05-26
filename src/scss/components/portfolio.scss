@@ -1,0 +1,82 @@
+.portfolio {
+  padding-bottom: 8rem;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    gap: 2.4rem;
+  }
+
+  &__nav {
+    grid-column: span 5;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__nav-item {
+    @extend %fs-t2;
+    opacity: 0.5;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  &__body {
+    grid-column: span 19;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.8rem;
+  }
+
+  &__item {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+
+    &:hover {
+      .portfolio__description {
+        bottom: 0.4rem;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__description {
+    position: absolute;
+    bottom: -100%;
+    left: 0.4rem;
+    right: 0.4rem;
+
+    padding: 0.8rem;
+
+    background-color: var(--pale-white);
+
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.15;
+
+    transition: 0.2s ease-in-out;
+  }
+}
