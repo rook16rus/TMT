@@ -4,25 +4,52 @@
 
   @extend %fs-t2;
 
+  @include breakpoint(laptop) {
+    padding: 3.5rem 0;
+  }
+
+  @include breakpoint(small-tablet) {
+    padding: 2.5rem 0;
+  }
+
+  @include breakpoint(mobile) {
+    padding: 2rem 0;
+    font-size: 1.4rem;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+    flex-wrap: wrap;
 
-  &__copyright {
-
+    @include breakpoint(tablet) {
+      gap: 2.6rem 1rem;
+    }
   }
 
   &__confidence {
     margin-right: auto;
     margin-left: 12.75%;
+
+    @include breakpoint(tablet) {
+      order: 1;
+      width: 100%;
+      margin-left: auto;
+
+      text-align: center;
+    }
   }
 
   &__developer {
     display: flex;
     gap: 1rem;
-    grid-column: span 4;
+
+    span {
+      @include breakpoint(mobile) {
+        display: none;
+      }
+    }
 
     img {
       width: 7.7rem;
