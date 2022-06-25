@@ -6,8 +6,19 @@
 
   color: #fff;
 
+  @include breakpoint(small-tablet) {
+    padding-bottom: 0;
+  }
+
   .swiper {
     height: 100%;
+
+    @include breakpoint(small-tablet) {
+      position: relative;
+      left: -2rem;
+
+      width: 100vw;
+    }
   }
 
   &__slide {
@@ -15,6 +26,11 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding: 4rem 4rem 5.8rem;
+
+    @include breakpoint(small-tablet) {
+      align-items: center;
+      padding: 1.7rem 1rem;
+    }
   }
 
   &__img {
@@ -28,10 +44,34 @@
     object-fit: cover;
   }
 
-  &__intro-title {
+  &__title {
     font-weight: 700;
     font-size: 2.4rem;
     line-height: normal;
     color: var(--pale-white);
+
+    @include breakpoint(small-tablet) {
+      width: 100%;
+      min-height: 9rem;
+      padding: 2.2rem;
+
+      background-color: #fff;
+
+      text-align: center;
+      color: #000;
+    }
+  }
+
+  .swiper-pagination {
+    @include breakpoint(small-tablet) {
+      z-index: 2;
+      right: 50%;
+      transform: translateX(50%);
+      bottom: 3.8rem !important;
+    }
+  }
+
+  .slider-bullet {
+    background-color: #383838;
   }
 }
