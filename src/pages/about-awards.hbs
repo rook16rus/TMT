@@ -15,29 +15,14 @@
                         </ul>
                     </nav>
                     <div class="about__body">
-                        <div class="about__awards js-fixed-layout">
-                            <div class="about__awards-img-slider js-fixed-container">
-                                <div class="about__awards-img-slider-inner swiper js-vertical-scroll-img-slider js-fixed-element">
-                                    <div class="swiper-wrapper">
-                                        {{#each awards }}
-                                            <div class="about__awards-img-slide swiper-slide">
-                                                <img src="{{this.img}}" alt="Достижение">
-                                            </div>
-                                        {{/each}}
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="about__awards-slider swiper js-vertical-scroll-slider">
-                                <div class="about__awards-slider-wrapper swiper-wrapper">
-                                    {{#each awards }}
-                                        <div class="about__awards-slide swiper-slide js-vertical-scroll-slide">
-                                            <span class="about__awards-date">{{this.date}}</span>
-                                            <p class="about__awards-text">{{this.text}}</p>
-                                        </div>
-                                    {{/each}}
-                                </div>
-                            </div>
-                        </div>
+                        <ul class="about__awards-list">
+                            {{#each awards }}
+                                <li class="about__awards-item">
+                                    <span class="about__awards-date">{{this.date}}</span>
+                                    <p class="about__awards-text">{{this.text}}</p>
+                                </li>
+                            {{/each}}
+                        </ul>
                     </div>
                 </div>
             </div>

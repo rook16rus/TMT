@@ -41,12 +41,12 @@
 
 // Наборный текст
 %fs-t1 {
-  @include clamp(16, 22);
-  font-weight: 500;
+  @include clamp(14, 18);
+  font-weight: 400;
   line-height: 1.4;
 }
 %fs-t2 {
-  @include clamp(16, 16);
+  @include clamp(13, 16);
   font-weight: 400;
   line-height: 1;
 }
