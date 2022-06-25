@@ -63,64 +63,25 @@
     gap: 2rem;
   }
 
-  &__author-achievements {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 2.4rem;
-  }
-
   &__author-achievements-list {
-    grid-column: span 8;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   &__author-achievement {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  &__author-achievement-date {
-    @extend %fs-t3
-  }
-
-  &__author-grades {
-    grid-column: span 4;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  &__author-grades-title {
-    @extend %fs-h3;
-  }
-
-  &__author-grades-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  &__lead {
-    margin-bottom: 2rem;
-
-    @extend %fs-t1;
-  }
-
-  &__text-wrapper {
-    column-count: 2;
-    column-gap: 2.4rem;
-    margin-bottom: -1.5rem;
-    max-height: 30rem;
-
-    p {
-      display: inline-block;
-      width: 100%;
-      margin-bottom: 1.5rem;
+    span {
+      font-weight: 700;
     }
   }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem;
+  }
+
+  /* Awards page */
 
   &__awards {
     display: grid;
@@ -172,6 +133,8 @@
   &__awards-text {
     @extend %fs-t1;
   }
+
+  /* Publications page */
 
   &__publications {
     column-count: 2;
