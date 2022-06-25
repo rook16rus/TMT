@@ -108,24 +108,30 @@
   /* Publications page */
 
   &__publications {
-    column-count: 2;
-    column-gap: 3rem;
-    margin-bottom: -4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 6rem 0;
+    border-bottom: 1px solid var(--border-color);
+
+    &:first-of-type {
+      padding-top: 0;
+    }
   }
 
-  &__publication {
-    display: inline-flex;
+  &__publication-link {
+    display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 100%;
-    margin-bottom: 4rem;
   }
 
   &__publication-title {
     @extend %fs-h2;
+    font-weight: 500;
   }
 
   &__publication-text {
-    @extend %fs-t3
+    @extend %fs-t3;
+    text-transform: uppercase;
   }
 }

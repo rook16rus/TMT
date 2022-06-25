@@ -18,8 +18,20 @@
                         <ul class="about__publications">
                             {{#each publications }}
                                 <li class="about__publication">
-                                    <h3 class="about__publication-title">{{this.title}}</h3>
-                                    <span class="about__publication-text">{{this.text}}</span>
+                                    <a class="about__publication-link" href="#">
+                                        <h3 class="about__publication-title">{{this.title}}</h3>
+                                        <span class="about__publication-text">{{this.text}}</span>
+                                    </a>
+                                 </li>
+                            {{/each}}
+                        </ul>
+                        <ul class="about__publications">
+                            {{#each publications }}
+                                <li class="about__publication">
+                                    <a class="about__publication-link" href="#">
+                                        <h3 class="about__publication-title">{{this.title}}</h3>
+                                        <span class="about__publication-text">{{this.text}}</span>
+                                    </a>
                                 </li>
                             {{/each}}
                         </ul>
