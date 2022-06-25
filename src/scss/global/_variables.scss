@@ -9,7 +9,7 @@
   --content-padding: 4rem;
 }
 
-@include breakpoint(mobile) {
+@include breakpoint(laptop) {
   :root {
     --content-padding: 2rem;
   }

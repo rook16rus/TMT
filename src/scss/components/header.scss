@@ -1,16 +1,96 @@
 .header {
+  position: relative;
+
   padding: 3.5rem 0 5rem;
+
+  @include breakpoint(laptop) {
+    padding: 3.5rem 0 3.5rem;
+  }
+
+  @include breakpoint(small-tablet) {
+    height: 13rem;
+    padding: 2rem 0 2.5rem;
+  }
+
+  @include breakpoint(mobile) {
+    height: 10rem;
+    padding: 1.5rem 0 2rem;
+  }
+
+  .container {
+    @include breakpoint(small-tablet) {
+      display: flex;
+      height: 100%;
+    }
+  }
 
   &__wrapper {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 4.5rem;
+
+    @include breakpoint(laptop) {
+      gap: 2.5rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    @include breakpoint(small-tablet) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 3rem;
+      height: 1.8rem;
+
+      &::before, &::after {
+        content: '';
+
+        height: 1px;
+        background-color: #4D4D4D;
+      }
+
+      span {
+        height: 1px;
+        background-color: #4D4D4D;
+      }
+    }
   }
 
   &__logo {
+    flex-shrink: 0;
+
+    @include breakpoint(small-tablet) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
     img {
       width: 29.2rem;
       height: 14rem;
+
+      @include breakpoint(laptop) {
+        width: 25rem;
+        height: 10rem;
+      }
+
+      @include breakpoint(small-tablet) {
+        width: 22rem;
+        height: 8rem;
+      }
+
+      @include breakpoint(mobile) {
+        width: 13.6rem;
+        height: 6.5rem;
+      }
     }
   }
 
@@ -19,6 +99,18 @@
     flex-direction: column;
     gap: 2rem;
     margin-top: auto;
+
+    @include breakpoint(laptop) {
+      gap: 1.6rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      display: none;
+    }
+
+    @include breakpoint(mobile) {
+
+    }
   }
 
   &__menu {
@@ -28,6 +120,10 @@
 
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
+
+    @include breakpoint(laptop) {
+      gap: 2.5rem;
+    }
   }
 
   &__menu-item {
@@ -51,7 +147,7 @@
   }
 
   &__menu-link {
-    font-size: 1.6rem;
+    @extend %fs-t2;
     line-height: 1;
     text-transform: uppercase;
   }
