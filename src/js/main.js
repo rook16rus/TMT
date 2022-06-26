@@ -12,6 +12,7 @@ import verticalScrollSlider from "./build-in/verticalScrollSlider";
 import fixedBlock from "./build-in/fixedBlock";
 import projectSlider from "./build-in/projectSlider";
 import intro from "./build-in/intro";
+import fancybox from "./build-in/fancybox";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     fixedBlock();
     projectSlider();
     intro();
+    fancybox();
 
     // custom
     initSliders();
