@@ -72,6 +72,8 @@
   }
 
   .slider-bullet {
-    background-color: #383838;
+    @include breakpoint(small-tablet) {
+      background-color: #383838;
+    }
   }
 }
