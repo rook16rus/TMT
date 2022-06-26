@@ -1,10 +1,26 @@
 .services {
-  padding-bottom: 8rem;
+  padding-bottom: 11rem;
+
+  @include breakpoint(laptop) {
+    padding-bottom: 8rem;
+  }
+
+  @include breakpoint(small-tablet) {
+    padding-bottom: 6rem;
+  }
+
+  @include breakpoint(mobile) {
+    padding-bottom: 4.5rem;
+  }
 
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(24, 1fr);
     gap: 2.4rem;
+
+    @include breakpoint(small-tablet) {
+      display: block;
+    }
   }
 
   &__body {
