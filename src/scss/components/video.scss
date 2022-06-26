@@ -1,10 +1,26 @@
 .video {
   padding-bottom: 8rem;
 
+  @include breakpoint(laptop) {
+    padding-bottom: 6rem;
+  }
+
+  @include breakpoint(small-tablet) {
+    padding-bottom: 5rem;
+  }
+
+  @include breakpoint(mobile) {
+    padding-bottom: 4.5rem;
+  }
+
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(24, 1fr);
     gap: 2.4rem;
+
+    @include breakpoint(small-tablet) {
+      display: block;
+    }
   }
 
   &__body {
@@ -14,7 +30,12 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 4rem 4.2rem;
+    gap: 3rem 3.5rem;
+
+    @include breakpoint(mobile) {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
   }
 
   &__preview {
