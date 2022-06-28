@@ -50,6 +50,9 @@
             <header class="header">
                 <div class="container">
                     <div class="header__wrapper">
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
                         <a class="header__logo" href="/">
                             <img src="img/logo.svg" alt="Логотип ТМТ">
                         </a>
@@ -106,10 +109,7 @@
                             <nav class="contacts__info">
                                 <div class="contacts__info-block">
                                     <h3 class="contacts__info-title">Адрес</h3>
-                                    <address class="contacts__info-text">420012, г. Казань,
-                                        <br>ул. Ульянова-Ленина,
-                                        <br>дом 67/2
-                                    </address>
+                                    <address class="contacts__info-text">420012,&nbsp;г. Казань, ул.&nbsp;Ульянова-Ленина, дом&nbsp;67/2</address>
                                 </div>
                                 <div class="contacts__info-block">
                                     <h3 class="contacts__info-title">Время работы</h3>
@@ -130,9 +130,7 @@
                                 </div>
                             </nav>
                             <div class="contacts__body">
-                                <div class="contacts__map">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2446.3157494294906!2d49.137993685598104!3d55.788351685426136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1653570468037!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div>
+                                <div class="contacts__map" id="map-test"></div>
                             </div>
                         </div>
                     </div>
@@ -183,6 +181,7 @@
             <div class="ie-placeholder">
                 <div class="ie-placeholder__message">Извините, ваш браузер не поддерживается</div>
             </div>
+            <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
             <script src="js/app.js"></script>
             <script src="assets/backend/backend.js"></script>
         </div>
