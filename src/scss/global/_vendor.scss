@@ -71,3 +71,9 @@
     opacity: 1;
     transition: opacity 300ms;
 }
+
+/* Яндекс карты */
+
+[class*="ground-pane"] {
+    filter: grayscale(1);
+}
