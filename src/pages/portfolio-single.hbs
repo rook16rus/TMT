@@ -17,41 +17,57 @@
                             {{#each portfolioInfo }}
                                 <div class="portfolio-single__info-block">
                                     <h3 class="portfolio-single__info-title">{{this.title}}</h3>
-                                    <p class="portfolio-single__info-text">{{this.text}}</p>
+                                    <p class="portfolio-single__info-text{{#if mod}} portfolio-single__info-text--bold{{/if}}">{{this.text}}</p>
                                 </div>
                             {{/each}}
                         </div>
                     </nav>
                     <div class="portfolio-single__body">
-                        <div class="portfolio-single__current-img swiper">
-                            <div class="swiper-wrapper">
-                                {{#each portfolioImg }}
-                                    <div class="swiper-slide">
-                                        <img src="{{this.img}}" alt="Фото проекта">
-                                    </div>
-                                {{/each}}
-                            </div>
-                            <div class="js-slider-navigation">
-                                <button class="swiper-button-prev js-prev-slide">
-                                    <svg>
-                                        <use xlink:href="#arrow-icon"></use>
-                                    </svg>
-                                </button>
-                                <button class="swiper-button-next js-next-slide">
-                                    <svg>
-                                        <use xlink:href="#arrow-icon"></use>
-                                    </svg>
-                                </button>
+                        <div class="portfolio-single__current-img-wrapper">
+                            <div class="portfolio-single__current-img swiper">
+                                <div class="swiper-wrapper">
+                                    {{#each portfolioImg }}
+                                        <div class="swiper-slide">
+                                            <img src="{{this.img}}" alt="Фото проекта">
+                                        </div>
+                                    {{/each}}
+                                </div>
+                                <div class="js-slider-navigation">
+                                    <button class="swiper-button-prev js-prev-slide">
+                                        <svg>
+                                            <use xlink:href="#arrow-icon"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="swiper-button-next js-next-slide">
+                                        <svg>
+                                            <use xlink:href="#arrow-icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="portfolio-single__gallery swiper">
-                            <div class="swiper-wrapper">
-                                {{#each portfolioImg }}
-                                    <div class="swiper-slide">
-                                        <img src="{{this.img}}" alt="Фото проекта">
-                                    </div>
-                                {{/each}}
+                        <div class="portfolio-single__gallery-wrapper">
+                            <div class="portfolio-single__gallery swiper">
+                                <div class="swiper-wrapper">
+                                    {{#each portfolioImg }}
+                                        <div class="swiper-slide">
+                                            <img src="{{this.img}}" alt="Фото проекта">
+                                        </div>
+                                    {{/each}}
+                                </div>
                             </div>
+                        </div>
+                        <div class="portfolio-single__info-block">
+                            <h3 class="portfolio-single__info-title">Описание</h3>
+                            <p class="portfolio-single__info-text">
+                                Концепция планировки и застройки основывается на принципе совмещения привлекательных
+                                сторон загородного и городского стиля жизни для семей с детьми. Территория
+                                проектирования находится в живописном природном окружении в 200 метрах от реки Волга. На
+                                участке предлагается размещение двух многоквартирных 3-4-х жилых домов со. встроенными
+                                подземными стоянками автомобилей. При квартирах, расположенных на первых этажах,
+                                предусмотрены палисадники. На кровле предлагается устройство эксплуатируемых террас
+                                индивидуального и общего пользования.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -60,3 +76,19 @@
 
     {{/content}}
 {{/extend}}
+
+<!--
+
+  @include breakpoint(laptop) {
+
+  }
+
+  @include breakpoint(small-tablet) {
+
+  }
+
+  @include breakpoint(mobile) {
+
+  }
+
+-->

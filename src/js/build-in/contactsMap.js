@@ -1,4 +1,6 @@
 export default function contactsMap() {
+    if(!document.querySelector('#map-test')) return;
+
     ymaps.ready(init);
 }
 
