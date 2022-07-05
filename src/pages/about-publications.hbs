@@ -9,7 +9,7 @@
                         <ul class="about__nav-list">
                             {{#each aboutNav }}
                                 <li class="about__nav-item{{#if this.active }} active{{/if}}">
-                                    <a href="#">{{this.name}}</a>
+                                    <a href="{{this.href}}">{{this.name}}</a>
                                 </li>
                             {{/each}}
                         </ul>

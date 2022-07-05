@@ -1,4 +1,31 @@
 {
+  "menu": [
+    {
+      "link": "about.html",
+      "name": "О нас",
+      "active": false
+    },
+    {
+      "link": "portfolio.html",
+      "name": "Портфолио",
+      "active": false
+    },
+    {
+      "link": "services.html",
+      "name": "Услуги",
+      "active": false
+    },
+    {
+      "link": "video.html",
+      "name": "Видео",
+      "active": true
+    },
+    {
+      "link": "contacts.html",
+      "name": "Контакты",
+      "active": false
+    }
+  ],
   "video": [
     {
       "img": "img/video-1.jpg",

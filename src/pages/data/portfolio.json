@@ -1,4 +1,31 @@
 {
+  "menu": [
+    {
+      "link": "about.html",
+      "name": "О нас",
+      "active": false
+    },
+    {
+      "link": "portfolio.html",
+      "name": "Портфолио",
+      "active": true
+    },
+    {
+      "link": "services.html",
+      "name": "Услуги",
+      "active": false
+    },
+    {
+      "link": "video.html",
+      "name": "Видео",
+      "active": false
+    },
+    {
+      "link": "contacts.html",
+      "name": "Контакты",
+      "active": false
+    }
+  ],
   "portfolio": [
     {
       "img": "img/project-1.jpg",

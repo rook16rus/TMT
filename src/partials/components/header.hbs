@@ -30,3 +30,38 @@
         </div>
     </div>
 </header>
+<nav class="header-mobile-nav">
+    <ul class="header-mobile-nav__menu">
+        {{#each menu }}
+            <li class="header-mobile-nav__menu-item{{#if active }} active{{/if}}">
+                <a class="header-mobile-nav__menu-link" href="{{this.link}}">{{this.name}}</a>
+            </li>
+        {{/each}}
+    </ul>
+    <ul class="header-mobile-nav__socials">
+        {{#each socials }}
+            <li class="header-mobile-nav__socials-item">
+                <a class="header-mobile-nav__socials-link" href="{{this.link}}">
+                    <svg>
+                        <use xlink:href="#{{this.svg}}"></use>
+                    </svg>
+                </a>
+            </li>
+        {{/each}}
+    </ul>
+</nav>
+<!--
+
+  @include breakpoint(laptop) {
+
+  }
+
+  @include breakpoint(small-tablet) {
+
+  }
+
+  @include breakpoint(mobile) {
+
+  }
+
+-->

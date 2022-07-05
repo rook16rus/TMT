@@ -1,7 +1,9 @@
 .header {
   position: relative;
+  z-index: 3;
 
   padding: 3.5rem 0 5rem;
+  background-color: #F2F2F2;
 
   @include breakpoint(laptop) {
     padding: 3.5rem 0 3.5rem;
@@ -15,6 +17,8 @@
   @include breakpoint(mobile) {
     height: 10rem;
     padding: 1.5rem 0 2rem;
+
+    border-bottom: 1px solid var(--border-color);
   }
 
   .container {
@@ -49,16 +53,40 @@
       width: 3rem;
       height: 1.8rem;
 
+      cursor: pointer;
+
       &::before, &::after {
         content: '';
 
         height: 1px;
         background-color: #4D4D4D;
+
+        transition: $base-transition-time;
+      }
+
+      &.active {
+        width: 2.4rem;
+
+        span {
+          opacity: 0;
+        }
+
+        &::before {
+          transform-origin: left;
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          transform-origin: left;
+          transform: rotate(-45deg);
+        }
       }
 
       span {
         height: 1px;
         background-color: #4D4D4D;
+
+        transition: 0.1s;
       }
     }
   }
@@ -107,10 +135,6 @@
     @include breakpoint(small-tablet) {
       display: none;
     }
-
-    @include breakpoint(mobile) {
-
-    }
   }
 
   &__menu {
@@ -130,7 +154,12 @@
     position: relative;
     padding: 2rem 0;
 
+
     &.active {
+      .header__menu-link {
+        opacity: 1;
+      }
+
       &::before {
         content: '';
 
@@ -147,6 +176,8 @@
   }
 
   &__menu-link {
+    opacity: 0.5;
+
     @extend %fs-t2;
     line-height: 1;
     text-transform: uppercase;

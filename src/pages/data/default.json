@@ -1,27 +1,27 @@
 {
   "menu": [
     {
-      "link": "#",
+      "link": "about.html",
       "name": "О нас",
       "active": false
     },
     {
-      "link": "#",
-      "name": "Услуги",
-      "active": false
-    },
-    {
-      "link": "#",
+      "link": "portfolio.html",
       "name": "Портфолио",
       "active": false
     },
     {
-      "link": "#",
+      "link": "services.html",
+      "name": "Услуги",
+      "active": false
+    },
+    {
+      "link": "video.html",
       "name": "Видео",
       "active": false
     },
     {
-      "link": "#",
+      "link": "contacts.html",
       "name": "Контакты",
       "active": false
     }
@@ -43,15 +43,18 @@
   "aboutNav": [
     {
       "name": "Мастерская",
-      "active": true
+      "active": true,
+      "href": "about.html"
     },
     {
       "name": "Награды",
-      "active": false
+      "active": false,
+      "href": "about-awards.html"
     },
     {
       "name": "Публикации",
-      "active": false
+      "active": false,
+      "href": "about-publications.html"
     }
   ],
   "portfolioNav": [

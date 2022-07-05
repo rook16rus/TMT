@@ -46,10 +46,7 @@ function addPolyline(coords, map) {
             geodesic: true,
             strokeColor: 'FF0000',
             strokeWidth: 4,
-            strokeStyle: {
-                style: 'dash',
-                offset: 20
-            },
+            strokeStyle: 'solid',
             arrowMaxLength: 15
         });
 
