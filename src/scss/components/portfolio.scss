@@ -73,6 +73,12 @@
     position: relative;
     aspect-ratio: 1 / 1;
     overflow: hidden;
+
+    &:hover {
+      .portfolio__description {
+        bottom: 1rem;
+      }
+    }
   }
 
   &__link {
@@ -89,7 +95,7 @@
 
   &__description {
     position: absolute;
-    bottom: 1rem;
+    bottom: -24%;
     left: 0.4rem;
     right: 0.4rem;
 
@@ -101,7 +107,7 @@
     font-size: 1.6rem;
     line-height: 1.15;
 
-    transition: 0.2s ease-in-out;
+    transition: 0.4s ease-in-out;
 
     @include breakpoint(mobile) {
       display: none;

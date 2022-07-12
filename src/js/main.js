@@ -2,7 +2,6 @@ import './build-in/lazyload';
 import detectTouch from './build-in/detectTouch';
 import setScrollbarWidth from './build-in/setScrollbarWidth';
 import anchorLinks from './build-in/anchorLinks';
-import "./libs/yandexMapArrow";
 
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -16,10 +15,12 @@ import intro from "./build-in/intro";
 import fancybox from "./build-in/fancybox";
 import contactsMap from "./build-in/contactsMap";
 import header from "./build-in/header";
+import loadApi from "./build-in/loadApi";
 
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener('DOMContentLoaded', function () {
+    loadApi();
     detectTouch();
     setScrollbarWidth();
     anchorLinks();
@@ -29,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function () {
     intro();
     fancybox();
     contactsMap();
-    header();
 
     // custom
     initSliders();
@@ -41,6 +41,7 @@ document.addEventListener('lazyloaded', () => {
 });
 
 window.addEventListener('load', function () {
+    header();
     document.body.classList.add('loaded');
     ScrollTrigger.refresh();
     setTimeout(() => document.body.classList.add('animatable'), 300);

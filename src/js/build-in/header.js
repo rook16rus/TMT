@@ -4,7 +4,7 @@ export default function header() {
     const header = document.querySelector('.header');
     const nav = document.querySelector('.header-mobile-nav');
 
-    nav.style.setProperty('--header-height', header.clientHeight + 'px');
+    nav.style.setProperty('--header-height', header.offsetHeight + 'px');
 
     const burger = document.querySelector('.header__burger');
 

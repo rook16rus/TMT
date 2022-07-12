@@ -1,23 +1,28 @@
 .header-mobile-nav {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: calc(100% - var(--header-height));
-  z-index: 2;
+  display: none;
 
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-  justify-content: space-between;
-  padding: 4rem 2rem;
-  height: calc(100vh - var(--header-height));
+  @include breakpoint(small-tablet) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -100%;
+    z-index: 2;
 
-  background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    padding-top: calc(var(--header-height) + 4rem);
+    height: 100%;
 
-  transition: 0.5s ease;
+    background-color: #F2F2F2;
+
+    transition: 0.5s ease;
+  }
 
   &.active {
-    bottom: 0;
+    top: 0;
   }
 
   &__menu {

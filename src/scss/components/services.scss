@@ -43,6 +43,10 @@
 
   &__title {
     @extend %fs-h2;
+
+    @include breakpoint(mobile) {
+      font-size: 1.8rem;
+    }
   }
 
 }

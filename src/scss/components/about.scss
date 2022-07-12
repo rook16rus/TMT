@@ -201,6 +201,10 @@
   &__publication-title {
     @extend %fs-h2;
     font-weight: 500;
+
+    @include breakpoint(mobile) {
+      font-size: 1.8rem;
+    }
   }
 
   &__publication-text {

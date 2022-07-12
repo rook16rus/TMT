@@ -70,6 +70,8 @@
 
 
     @include breakpoint(small-tablet) {
+      position: relative;
+      height: 56.5rem;
       grid-column: 1 / -1;
     }
   }
@@ -78,11 +80,10 @@
     height: 100%;
 
     @include breakpoint(small-tablet) {
-      position: relative;
+      position: absolute;
       left: -2rem;
 
       width: 100vw;
-      height: 56.4rem;
     }
 
     iframe {

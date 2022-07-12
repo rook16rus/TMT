@@ -5,6 +5,10 @@
     padding-bottom: 5rem;
   }
 
+  @include breakpoint(mobile) {
+    padding-top: 2rem;
+  }
+
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(24, 1fr);

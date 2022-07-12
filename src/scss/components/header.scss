@@ -156,10 +156,6 @@
 
 
     &.active {
-      .header__menu-link {
-        opacity: 1;
-      }
-
       &::before {
         content: '';
 
@@ -170,17 +166,18 @@
 
         height: 1px;
 
-        background-color: var(--primary);
+        background-color: #4D4D4D;
       }
     }
   }
 
   &__menu-link {
-    opacity: 0.5;
+    opacity: 1;
 
     @extend %fs-t2;
     line-height: 1;
     text-transform: uppercase;
+    color: #4D4D4D;
   }
 
   &__socials {
@@ -189,8 +186,8 @@
     gap: 1.5rem;
 
     svg {
-      width: 2.4rem;
-      height: 2.4rem;
+      width: 3rem;
+      height: 3rem;
     }
   }
 }
