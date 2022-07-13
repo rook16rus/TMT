@@ -204,7 +204,7 @@ gulp.task('beautify-html', () => {
             indent_size: 4,
             indent_char: ' ',
             indent_inner_html: true,
-            unformatted: [],
+            unformatted: ['span'],
             content_unformatted: [],
             wrap_line_length: 0,
             inline: [],

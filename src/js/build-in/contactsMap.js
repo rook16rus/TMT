@@ -29,6 +29,10 @@ function addMarker(coords, map) {
     const marker = new ymaps.Placemark(coords, {
         hintContent: 'офис ТМТ'
     }, {
+        iconLayout: 'default#image',
+        iconImageHref: '../img/placemarker.svg',
+        iconImageSize: [40, 40],
+        iconImageOffset: [-20, -40]
     })
 
     map.geoObjects.add(marker);
