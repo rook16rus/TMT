@@ -30,7 +30,7 @@ function addMarker(coords, map) {
         hintContent: 'офис ТМТ'
     }, {
         iconLayout: 'default#image',
-        iconImageHref: '../img/placemarker.svg',
+        iconImageHref: 'img/placemarker.svg',
         iconImageSize: [40, 40],
         iconImageOffset: [-20, -40]
     })
