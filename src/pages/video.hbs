@@ -9,7 +9,7 @@
                             {{#each video }}
                                 <li class="video__item">
                                     <a class="video__preview" data-fancybox="video" data-src="https://youtu.be/vio58FKChJc">
-                                        <img src="{{this.img}}" alt="Превью видео">
+                                        <img class="lazyload" data-src="{{this.img}}" alt="Превью видео">
                                     </a>
                                     <h3 class="video__title">{{this.title}}</h3>
                                     <span class="video__time">{{this.time}}</span>
