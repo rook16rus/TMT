@@ -6,22 +6,12 @@
         <h1 class="visually-hidden">Проекты</h1>
         <div class="swiper js-init-slider" data-loop="true">
             <div class="swiper-wrapper">
-                <div class="intro__slide swiper-slide">
-                    <img class="intro__img lazyload" data-src="img/intro-1.jpg" alt="Фото ЖК">
-                    <h2 class="intro__title">ЖК «Катановский»</h2>
-                </div>
-                <div class="intro__slide swiper-slide">
-                    <img class="intro__img lazyload" data-src="img/intro-1.jpg" alt="Фото ЖК">
-                    <h2 class="intro__title">ЖК «Катановский»</h2>
-                </div>
-                <div class="intro__slide swiper-slide">
-                    <img class="intro__img lazyload" data-src="img/intro-1.jpg" alt="Фото ЖК">
-                    <h2 class="intro__title">ЖК «Катановский»</h2>
-                </div>
-                <div class="intro__slide swiper-slide">
-                    <img class="intro__img lazyload" data-src="img/intro-1.jpg" alt="Фото ЖК">
-                    <h2 class="intro__title">ЖК «Катановский»</h2>
-                </div>
+                {{#each intro }}
+                    <div class="intro__slide swiper-slide">
+                        <img class="intro__img lazyload" data-src="{{this.img}}" alt="Фото ЖК">
+                        <h2 class="intro__title">ЖК «Катановский»</h2>
+                    </div>
+                {{/each}}
             </div>
             <div class="js-slider-navigation">
                 <button class="intro__button-prev swiper-button-prev js-prev-slide">
