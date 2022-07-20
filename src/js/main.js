@@ -15,12 +15,10 @@ import intro from "./build-in/intro";
 import fancybox from "./build-in/fancybox";
 import contactsMap from "./build-in/contactsMap";
 import header from "./build-in/header";
-import loadApi from "./build-in/loadApi";
 
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener('DOMContentLoaded', function () {
-    loadApi();
     detectTouch();
     setScrollbarWidth();
     anchorLinks();
