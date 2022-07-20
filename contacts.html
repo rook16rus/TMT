@@ -73,23 +73,23 @@
                                     <a class="header__menu-link" href="contacts.html">Контакты</a>
                                 </li>
                             </ul>
-                            <ul class="header__socials">
-                                <li class="header__socials-item">
-                                    <a class="header__socials-link" href="#">
+                            <ul class="header__socials socials">
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
                                         <svg>
                                             <use xlink:href="#inst-icon"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="header__socials-item">
-                                    <a class="header__socials-link" href="#">
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
                                         <svg>
                                             <use xlink:href="#phone-icon"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="header__socials-item">
-                                    <a class="header__socials-link" href="#">
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
                                         <svg>
                                             <use xlink:href="#mail-icon"></use>
                                         </svg>
@@ -118,23 +118,23 @@
                         <a class="header-mobile-nav__menu-link" href="contacts.html">Контакты</a>
                     </li>
                 </ul>
-                <ul class="header-mobile-nav__socials">
-                    <li class="header-mobile-nav__socials-item">
-                        <a class="header-mobile-nav__socials-link" href="#">
+                <ul class="header-mobile-nav__socials socials">
+                    <li class="socials__item">
+                        <a class="socials__link" href="#">
                             <svg>
                                 <use xlink:href="#inst-icon"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="header-mobile-nav__socials-item">
-                        <a class="header-mobile-nav__socials-link" href="#">
+                    <li class="socials__item">
+                        <a class="socials__link" href="#">
                             <svg>
                                 <use xlink:href="#phone-icon"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="header-mobile-nav__socials-item">
-                        <a class="header-mobile-nav__socials-link" href="#">
+                    <li class="socials__item">
+                        <a class="socials__link" href="#">
                             <svg>
                                 <use xlink:href="#mail-icon"></use>
                             </svg>
@@ -150,25 +150,35 @@
                             <nav class="contacts__info">
                                 <div class="contacts__info-block">
                                     <h3 class="contacts__info-title">Адрес</h3>
-                                    <address class="contacts__info-text">420012,&nbsp;г. Казань, ул.&nbsp;Ульянова-Ленина, дом&nbsp;67/2</address>
+                                    <div class="contacts__info-text">
+                                        <address>420012,&nbsp;г. Казань, ул.&nbsp;Ульянова-Ленина, дом&nbsp;67/2</address>
+                                    </div>
                                 </div>
                                 <div class="contacts__info-block">
-                                    <h3 class="contacts__info-title">Время работы</h3><span class="contacts__info-time">ПН-ПТ 08:00-17:00<br>СБ-ВС Выходной</span>
+                                    <h3 class="contacts__info-title">Время работы</h3>
+                                    <div class="contacts__info-time"><span>ПН-ПТ 08:00-17:00<br>СБ-ВС Выходной</span>
+                                    </div>
                                 </div>
                                 <div class="contacts__info-block">
                                     <h3 class="contacts__info-title">Телефон</h3>
                                     <div class="contacts__info-phones">
-                                        <a class="contacts__info-link" href="tel:+78432646706">+7 843 264 67 06</a>
-                                        <a class="contacts__info-link" href="tel:+78432642178">+7 843 264 21 78</a>
+                                        <div class="contacts__info-link">
+                                            <a href="tel:+78432646706">+7 843 264 67 06</a>
+                                        </div>
+                                        <div class="contacts__info-link">
+                                            <a href="tel:+78432642178">+7 843 264 21 78</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="contacts__info-block">
                                     <h3 class="contacts__info-title">Эл.Почта</h3>
-                                    <a class="contacts__info-link" href="mailto:tmt-gv@mail.ru">tmt-gv@mail.ru</a>
+                                    <div class="contacts__info-link">
+                                        <a href="mailto:tmt-gv@mail.ru">tmt-gv@mail.ru</a>
+                                    </div>
                                 </div>
                             </nav>
                             <div class="contacts__body">
-                                <div class="contacts__map" id="map-test" data-api="ваш API-ключ"></div>
+                                <div class="contacts__map" id="map" data-api="ваш API-ключ" data-marker="img/placemarker.svg" data-coordinates="55.787535275464855, 49.13822021074417" data-zoom="18" data-hint="офис ТМТ"></div>
                             </div>
                         </div>
                     </div>

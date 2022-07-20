@@ -73,23 +73,23 @@
                                     <a class="header__menu-link" href="contacts.html">Контакты</a>
                                 </li>
                             </ul>
-                            <ul class="header__socials">
-                                <li class="header__socials-item">
-                                    <a class="header__socials-link" href="#">
+                            <ul class="header__socials socials">
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
                                         <svg>
                                             <use xlink:href="#inst-icon"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="header__socials-item">
-                                    <a class="header__socials-link" href="#">
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
                                         <svg>
                                             <use xlink:href="#phone-icon"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="header__socials-item">
-                                    <a class="header__socials-link" href="#">
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
                                         <svg>
                                             <use xlink:href="#mail-icon"></use>
                                         </svg>
@@ -118,23 +118,23 @@
                         <a class="header-mobile-nav__menu-link" href="contacts.html">Контакты</a>
                     </li>
                 </ul>
-                <ul class="header-mobile-nav__socials">
-                    <li class="header-mobile-nav__socials-item">
-                        <a class="header-mobile-nav__socials-link" href="#">
+                <ul class="header-mobile-nav__socials socials">
+                    <li class="socials__item">
+                        <a class="socials__link" href="#">
                             <svg>
                                 <use xlink:href="#inst-icon"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="header-mobile-nav__socials-item">
-                        <a class="header-mobile-nav__socials-link" href="#">
+                    <li class="socials__item">
+                        <a class="socials__link" href="#">
                             <svg>
                                 <use xlink:href="#phone-icon"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="header-mobile-nav__socials-item">
-                        <a class="header-mobile-nav__socials-link" href="#">
+                    <li class="socials__item">
+                        <a class="socials__link" href="#">
                             <svg>
                                 <use xlink:href="#mail-icon"></use>
                             </svg>
@@ -148,59 +148,81 @@
                     <div class="container">
                         <div class="portfolio-single__wrapper">
                             <nav class="portfolio-single__nav">
-                                <h1 class="portfolio-single__title main-title">Портфолио</h1>
-                                <ul class="portfolio-single__nav-list">
-                                    <li class="portfolio-single__nav-item active">
-                                        <a href="#">Все проекты</a>
-                                    </li>
-                                    <li class="portfolio-single__nav-item">
-                                        <a href="#">Общественные</a>
-                                    </li>
-                                    <li class="portfolio-single__nav-item">
-                                        <a href="#">Градо</a>
-                                    </li>
-                                    <li class="portfolio-single__nav-item">
-                                        <a href="#">Жилые</a>
-                                    </li>
-                                    <li class="portfolio-single__nav-item">
-                                        <a href="#">Офисы и деловые центры</a>
-                                    </li>
-                                    <li class="portfolio-single__nav-item">
-                                        <a href="#">Интерьеры</a>
-                                    </li>
-                                </ul>
+                                <div class="portfolio-single__nav-menu side-menu">
+                                    <h1 class="side-menu__title main-title">Портфолио</h1>
+                                    <ul class="side-menu__nav-list">
+                                        <li class="side-menu__nav-item active">
+                                            <a href="#">Все проекты</a>
+                                        </li>
+                                        <li class="side-menu__nav-item">
+                                            <a href="#">Общественные</a>
+                                        </li>
+                                        <li class="side-menu__nav-item">
+                                            <a href="#">Градо</a>
+                                        </li>
+                                        <li class="side-menu__nav-item">
+                                            <a href="#">Жилые</a>
+                                        </li>
+                                        <li class="side-menu__nav-item">
+                                            <a href="#">Офисы и деловые центры</a>
+                                        </li>
+                                        <li class="side-menu__nav-item">
+                                            <a href="#">Интерьеры</a>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <div class="portfolio-single__info">
                                     <div class="portfolio-single__info-block">
                                         <h3 class="portfolio-single__info-title">Наименование объекта</h3>
-                                        <p class="portfolio-single__info-text portfolio-single__info-text--bold">Проект планировки и застройки территории участков, расположенных по ул. Лесхозная в городе Чебоксары (форэскиз)</p>
+                                        <div class="portfolio-single__info-text">
+                                            <p>Проект планировки и застройки территории участков, расположенных по ул. Лесхозная в городе Чебоксары (форэскиз)</p>
+                                        </div>
                                     </div>
                                     <div class="portfolio-single__info-block">
                                         <h3 class="portfolio-single__info-title">Адрес</h3>
-                                        <p class="portfolio-single__info-text">Чувашская Республика, г. Чебоксары, ул. Лесхозная</p>
+                                        <div class="portfolio-single__info-text">
+                                            <p>Чувашская Республика, г. Чебоксары, ул. Лесхозная</p>
+                                        </div>
                                     </div>
                                     <div class="portfolio-single__info-block">
                                         <h3 class="portfolio-single__info-title">Стадия проекта</h3>
-                                        <p class="portfolio-single__info-text">Форэскизный проект</p>
+                                        <div class="portfolio-single__info-text">
+                                            <p>Форэскизный проект</p>
+                                        </div>
                                     </div>
                                     <div class="portfolio-single__info-block">
                                         <h3 class="portfolio-single__info-title">Проектная организация</h3>
-                                        <p class="portfolio-single__info-text">«Творческая мастерская архитекторов Токаревых»</p>
+                                        <div class="portfolio-single__info-text">
+                                            <p>«Творческая мастерская архитекторов Токаревых»</p>
+                                        </div>
                                     </div>
                                     <div class="portfolio-single__info-block">
                                         <h3 class="portfolio-single__info-title">Авторы проекта</h3>
-                                        <p class="portfolio-single__info-text">Г. Токарева - руководитель авторского коллектива, О. Касимова, Р. Ахмадесв, Г. Камалова, А. Плеханова, Л. Султанова</p>
+                                        <div class="portfolio-single__info-text">
+                                            <p>Г. Токарева - руководитель авторского коллектива, О. Касимова, Р. Ахмадесв, Г. Камалова, А. Плеханова, Л. Султанова</p>
+                                        </div>
                                     </div>
                                     <div class="portfolio-single__info-block">
                                         <h3 class="portfolio-single__info-title">Заказчик</h3>
-                                        <p class="portfolio-single__info-text">АО «Чебоксарский речной порт»</p>
+                                        <div class="portfolio-single__info-text">
+                                            <p>АО «Чебоксарский речной порт»</p>
+                                        </div>
                                     </div>
                                     <div class="portfolio-single__info-block">
                                         <h3 class="portfolio-single__info-title">Площадь участка</h3>
-                                        <p class="portfolio-single__info-text portfolio-single__info-text--bold">1.06 га</p>
+                                        <div class="portfolio-single__info-text">
+                                            <p>
+                                                <b>1.06 га</b>
+                                            </p>
+                                        </div>
                                     </div>
                                     <div class="portfolio-single__info-block">
                                         <h3 class="portfolio-single__info-title">Общая площадь зданий</h3>
-                                        <p class="portfolio-single__info-text portfolio-single__info-text--bold">11 037 кв.м</p>
+                                        <div class="portfolio-single__info-text">
+                                            <p>
+                                                <b>11 037 кв.м</b>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </nav>
