@@ -15,10 +15,10 @@
                         </li>
                     {{/each}}
                 </ul>
-                <ul class="header__socials">
+                <ul class="header__socials socials">
                     {{#each socials }}
-                        <li class="header__socials-item">
-                            <a class="header__socials-link" href="{{this.link}}">
+                        <li class="socials__item">
+                            <a class="socials__link" href="{{this.link}}">
                                 <svg>
                                     <use xlink:href="#{{this.svg}}"></use>
                                 </svg>
@@ -38,10 +38,10 @@
             </li>
         {{/each}}
     </ul>
-    <ul class="header-mobile-nav__socials">
+    <ul class="header-mobile-nav__socials socials">
         {{#each socials }}
-            <li class="header-mobile-nav__socials-item">
-                <a class="header-mobile-nav__socials-link" href="{{this.link}}">
+            <li class="socials__item">
+                <a class="socials__link" href="{{this.link}}">
                     <svg>
                         <use xlink:href="#{{this.svg}}"></use>
                     </svg>

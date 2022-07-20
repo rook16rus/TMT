@@ -179,15 +179,4 @@
     text-transform: uppercase;
     color: #4D4D4D;
   }
-
-  &__socials {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1.5rem;
-
-    svg {
-      width: 3rem;
-      height: 3rem;
-    }
-  }
 }

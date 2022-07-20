@@ -5,14 +5,16 @@
             <div class="container">
                 <div class="portfolio__wrapper">
                     <nav class="portfolio__nav">
-                        <h1 class="portfolio__title main-title">Портфолио</h1>
-                        <ul class="portfolio__nav-list">
-                            {{#each portfolioNav }}
-                                <li class="portfolio__nav-item{{#if this.active }} active{{/if}}">
-                                    <a href="#">{{this.name}}</a>
-                                </li>
-                            {{/each}}
-                        </ul>
+                        <div class="side-menu">
+                            <h1 class="side-menu__title main-title">Портфолио</h1>
+                            <ul class="side-menu__nav-list">
+                                {{#each portfolioNav }}
+                                    <li class="side-menu__nav-item{{#if this.active }} active{{/if}}">
+                                        <a href="#">{{this.name}}</a>
+                                    </li>
+                                {{/each}}
+                            </ul>
+                        </div>
                     </nav>
                     <div class="portfolio__body">
                         <ul class="portfolio__list">

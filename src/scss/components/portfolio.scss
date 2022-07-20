@@ -26,28 +26,6 @@
 
   &__nav {
     grid-column: span 5;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-
-    @include breakpoint(small-tablet) {
-      display: none;
-    }
-  }
-
-  &__nav-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  &__nav-item {
-    @extend %fs-t2;
-    opacity: 0.5;
-
-    &.active {
-      opacity: 1;
-    }
   }
 
   &__body {
@@ -71,7 +49,10 @@
 
   &__item {
     position: relative;
+
+    max-width: 31rem;
     aspect-ratio: 1 / 1;
+
     overflow: hidden;
 
     &:hover {

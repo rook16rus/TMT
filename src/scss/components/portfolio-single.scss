@@ -30,8 +30,6 @@
 
   &__nav {
     grid-column: span 5;
-    display: flex;
-    flex-direction: column;
     min-width: 20rem;
 
     @include breakpoint(small-tablet) {
@@ -40,25 +38,12 @@
     }
   }
 
-  &__nav-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  &__nav-menu {
     padding-bottom: 3.5rem;
-
-    border-bottom: 1px solid var(--border-color)  ;
+    border-bottom: 1px solid var(--border-color);
 
     @include breakpoint(small-tablet) {
       display: none;
-    }
-  }
-
-  &__nav-item {
-    @extend %fs-t2;
-    opacity: 0.5;
-
-    &.active {
-      opacity: 1;
     }
   }
 

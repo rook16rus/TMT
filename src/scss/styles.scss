@@ -6,6 +6,9 @@
 @import './global/global';
 @import './global/layout';
 
+@import "./components/socials";
+@import "./components/side-menu";
+
 @import './components/header';
 @import "./components/header-mobile-nav";
 @import './components/footer';
@@ -17,6 +20,3 @@
 @import "./components/portfolio-single";
 @import "./components/video";
 @import "./components/contacts";
-
-
-
