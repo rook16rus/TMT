@@ -45,7 +45,10 @@
     display: flex;
     gap: 1rem;
 
+    font-size: 1.4rem;
+
     span {
+      padding-top: 0.2rem;
       @include breakpoint(mobile) {
         display: none;
       }
@@ -55,6 +58,17 @@
       width: 7.7rem;
       height: 1.9rem;
       margin-top: 0.2rem;
+    }
+  }
+
+  &__bottom {
+    margin-top: 1.6rem;
+
+    p {
+      max-width: 90rem;
+
+      font-size: 1.5rem;
+      line-height: 1.4;
     }
   }
 }

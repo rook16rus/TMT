@@ -1,6 +1,10 @@
 .about {
   padding-bottom: 8rem;
 
+  &--awards {
+    padding-bottom: 7.6rem;
+  }
+
   @include breakpoint(laptop) {
     padding-bottom: 6rem;
   }
@@ -55,11 +59,13 @@
 
   &__body {
     grid-column: span 19;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   &__author-info {
     display: flex;
-    align-items: flex-start;
     gap: 4rem;
     margin-bottom: 4rem;
 
@@ -89,7 +95,6 @@
     img {
       width: 100%;
       height: 100%;
-      object-fit: contain;
     }
   }
 
@@ -97,6 +102,7 @@
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    max-width: 66rem;
   }
 
   &__author-block {
@@ -136,6 +142,9 @@
     display: flex;
     flex-direction: column;
     gap: 2.6rem;
+    max-width: 82rem;
+
+    @extend %fs-t1;
 
     @include breakpoint(mobile) {
       gap: 1rem;
@@ -148,6 +157,7 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    max-width: 72rem;
 
     @include breakpoint(mobile) {
       padding-top: 4rem;
@@ -174,7 +184,7 @@
   /* Publications page */
 
   &__publications {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     gap: 4rem;
     padding: 6rem 0;
@@ -202,8 +212,8 @@
   }
 
   &__publication-title {
-    @extend %fs-h2;
-    font-weight: 500;
+    @extend %fs-t2;
+    font-weight: 600;
 
     @include breakpoint(mobile) {
       font-size: 1.8rem;
@@ -212,6 +222,5 @@
 
   &__publication-text {
     @extend %fs-t3;
-    text-transform: uppercase;
   }
 }
