@@ -39,11 +39,6 @@
 
       text-align: center;
     }
-
-    a {
-      display: inline-block;
-      margin-left: 0.4rem;
-    }
   }
 
   &__developer {
@@ -77,6 +72,11 @@
 
       @include breakpoint(mobile) {
         font-size: 1.2rem;
+      }
+
+      a {
+        display: inline-block;
+        margin-left: 0.4rem;
       }
     }
   }
