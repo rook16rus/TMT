@@ -30,10 +30,7 @@ export default function projectSlider() {
     });
 
     new Swiper(`.${currentSlider.classList[0]}`, {
-        grid: {
-            rows: 3,
-            fill: 'row'
-        },
+        autoHeight: true,
         thumbs: {
             swiper: gallery
         },

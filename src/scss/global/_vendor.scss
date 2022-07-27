@@ -56,10 +56,18 @@
 
     transition: 0.3s;
 
+    @include breakpoint(mobile) {
+        width: 1rem;
+    }
+
     &--active {
         width: 4rem;
         height: 2px;
         opacity: 1;
+
+        @include breakpoint(mobile) {
+            width: 2rem;
+        }
     }
 }
 

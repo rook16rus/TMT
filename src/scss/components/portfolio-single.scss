@@ -81,61 +81,14 @@
     letter-spacing: 0.04em;
   }
 
-  &__info-desc {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-
+  &__info-text {
     &--bold {
       font-weight: 700;
-    }
-
-    ul {
-      display: flex;
-      flex-direction: column;
-      gap: 0.8rem;
-
-      li {
-        display: flex;
-        align-items: flex-start;
-        gap: 1.3rem;
-
-        &::before {
-          content: '';
-
-          width: 0.5rem;
-          height: 0.5rem;
-          margin-top: 0.6rem;
-          flex-shrink: 0;
-          
-          border-radius: 50%;
-          background-color: #000;
-        }
-      }
-    }
-
-    ol {
-      display: flex;
-      flex-direction: column;
-      gap: 0.8rem;
-
-      counter-reset: olCounter;
-
-      li {
-        display: flex;
-        align-items: flex-start;
-        gap: 1.3rem;
-
-        counter-increment: olCounter;
-
-        &::before {
-          content: counter(olCounter);
-        }
-      }
     }
   }
 
   &__body {
+    min-width: 0;
     grid-column: span 19;
 
     @include breakpoint(small-tablet) {
@@ -170,9 +123,16 @@
       aspect-ratio: auto;
     }
 
+    .swiper-slide {
+      @include breakpoint(small-tablet) {
+        aspect-ratio: 464 / 268
+      }
+    }
+
     img {
       width: 100%;
       height: 100%;
+      object-fit: contain;
     }
   }
 
@@ -208,17 +168,20 @@
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
     }
   }
 
   .swiper-button-prev {
+    color: #fff;
+
     @include breakpoint(mobile) {
       left: 1rem;
     }
   }
 
   .swiper-button-next {
+    color: #fff;
+
     @include breakpoint(mobile) {
       right: 1rem;
     }

@@ -16,9 +16,7 @@
 
   @include breakpoint(mobile) {
     height: 10rem;
-    padding: 1.5rem 0 2rem;
-
-    border-bottom: 1px solid var(--border-color);
+    padding: 0;
   }
 
   .container {
@@ -40,6 +38,13 @@
     @include breakpoint(small-tablet) {
       display: flex;
       align-items: center;
+    }
+
+    @include breakpoint(mobile) {
+      width: 100%;
+      padding: 1.5rem 0 2rem;
+
+      border-bottom: 1px solid var(--border-color);
     }
   }
 
@@ -125,7 +130,7 @@
   &__nav {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 0.8rem;
     margin-top: auto;
 
     @include breakpoint(laptop) {
