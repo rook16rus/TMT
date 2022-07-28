@@ -115,8 +115,6 @@
       height: 100%;
 
       @include breakpoint(mobile) {
-        position: absolute;
-
         width: 100vw;
         max-width: none;
         height: 100%;
@@ -129,6 +127,10 @@
     flex-direction: column;
     gap: 4rem;
     max-width: 66rem;
+
+    @include breakpoint(mobile) {
+      padding-right: 2rem;
+    }
   }
 
   &__author-block {
@@ -174,6 +176,7 @@
 
     @include breakpoint(mobile) {
       gap: 1rem;
+      padding-right: 2rem;
     }
   }
 

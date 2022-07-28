@@ -37,6 +37,7 @@ export default function projectSlider() {
         spaceBetween: 12,
         breakpoints: {
             380: {
+                autoHeight: false,
                 grid: {
                     rows: 1
                 },
