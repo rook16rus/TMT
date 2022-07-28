@@ -9,7 +9,8 @@ export default function initSliders() {
         const autoplay = slider.dataset.delay ? {
             autoplay: {
                 delay: Number(slider.dataset.delay),
-                disableOnInteraction: true
+                disableOnInteraction: false,
+                waitForTransition: false
             }
         } : {};
         const slidesPerView = slider.dataset.slides ? Number(slider.dataset.slides) || 'auto' : 1;
@@ -114,6 +115,9 @@ export default function initSliders() {
                 bulletElement: 'button',
                 bulletClass: 'slider-bullet',
                 bulletActiveClass: 'slider-bullet--active',
+                renderBullet: function (currentClass, totalClass) {
+                    return "<button class='slider-bullet'><span></span></button>";
+                },
             },
             ...breakpointsSpacebetween,
             ...breakpointsPerview,
