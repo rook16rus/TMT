@@ -1,17 +1,8 @@
 .services {
-  padding-bottom: 11rem;
-
-  @include breakpoint(laptop) {
-    padding-bottom: 8rem;
-  }
-
-  @include breakpoint(small-tablet) {
-    padding-bottom: 6rem;
-  }
+  padding-bottom: 5rem;
 
   @include breakpoint(mobile) {
     padding-top: 4rem;
-    padding-bottom: 4.5rem;
   }
 
   &__wrapper {
