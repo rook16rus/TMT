@@ -1,6 +1,6 @@
 .video {
   @include breakpoint(mobile) {
-    padding-top: 4rem;
+    padding-top: 0rem;
   }
 
   &__wrapper {
@@ -15,6 +15,28 @@
 
   &__body {
     grid-column: 6 / -1;
+  }
+
+  &__main-title {
+    display: none;
+
+    @include breakpoint(small-tablet) {
+      display: block;
+      padding: 1rem 0;
+      margin-bottom: 2.6rem;
+
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    @include breakpoint(mobile) {
+      border-top: 0;
+      font-size: 1.3rem;
+    }
   }
 
   &__list {
@@ -39,6 +61,10 @@
 
     cursor: pointer;
 
+    @include breakpoint(mobile) {
+      margin-bottom: 1rem;
+    }
+
     &::before {
       content: '';
 
@@ -60,12 +86,13 @@
   }
 
   &__title {
-    font-size: 2rem;
-    font-weight: 400;
     margin-bottom: 1rem;
 
+    @extend %fs-t1;
+    font-weight: 400;
+
     @include breakpoint(mobile) {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
     }
   }
 

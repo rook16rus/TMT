@@ -33,6 +33,11 @@
       "href": "about.html"
     },
     {
+      "name": "Биография",
+      "active": false,
+      "href": "about.html"
+    },
+    {
       "name": "Награды",
       "active": false,
       "href": "about-awards.html"
