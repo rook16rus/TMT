@@ -43,8 +43,6 @@
     @include breakpoint(mobile) {
       width: 100%;
       padding: 1.5rem 0 2rem;
-
-      border-bottom: 1px solid var(--border-color);
     }
   }
 
@@ -121,8 +119,8 @@
       }
 
       @include breakpoint(mobile) {
-        width: 13.6rem;
-        height: 6rem;
+        width: 13.8rem;
+        height: 6.7rem;
       }
     }
   }

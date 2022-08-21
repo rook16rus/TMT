@@ -3,6 +3,7 @@
 
   @include breakpoint(mobile) {
     padding-top: 0;
+    padding-bottom: 2.7rem;
   }
 
   &__wrapper {
@@ -24,8 +25,8 @@
 
     @include breakpoint(small-tablet) {
       display: block;
-      padding: 1rem 0;
-      margin-bottom: 2.6rem;
+      padding: 0.7rem 0;
+      margin-bottom: 2.7rem;
 
       border-top: 1px solid var(--border-color);
       border-bottom: 1px solid var(--border-color);
@@ -36,15 +37,15 @@
     }
 
     @include breakpoint(mobile) {
-      border-top: 0;
-      font-size: 1.3rem;
+      font-size: 1.1rem;
+      line-height: 1;
     }
   }
 
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2.7rem;
     max-width: 72rem;
   }
 
