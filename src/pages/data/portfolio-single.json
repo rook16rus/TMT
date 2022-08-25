@@ -29,11 +29,6 @@
   ],
   "portfolioInfo": [
     {
-      "title": "Наименование объекта",
-      "text": "Проект планировки и застройки территории участков, расположенных по ул. Лесхозная в городе Чебоксары (форэскиз)",
-      "mod": true
-    },
-    {
       "title": "Адрес",
       "text": "Чувашская Республика, г. Чебоксары, ул. Лесхозная"
     },
@@ -64,7 +59,7 @@
       "mod": true
     }
   ],
-  "portfolioImg": [
+  "gallery": [
     {
       "img": "img/portfolio-1.jpg"
     },
@@ -81,7 +76,43 @@
       "img": "img/project-5.jpg"
     },
     {
+      "img": "img/portfolio-1.jpg"
+    },
+    {
+      "img": "img/project-2.jpg"
+    },
+    {
+      "img": "img/project-3.jpg"
+    },
+    {
+      "img": "img/project-4.jpg"
+    },
+    {
+      "img": "img/portfolio-1.jpg"
+    },
+    {
+      "img": "img/project-2.jpg"
+    },
+    {
+      "img": "img/project-3.jpg"
+    },
+    {
+      "img": "img/project-4.jpg"
+    },
+    {
       "img": "img/project-5.jpg"
+    },
+    {
+      "img": "img/portfolio-1.jpg"
+    },
+    {
+      "img": "img/project-2.jpg"
+    },
+    {
+      "img": "img/project-3.jpg"
+    },
+    {
+      "img": "img/project-4.jpg"
     }
   ]
 }
