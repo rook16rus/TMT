@@ -10,6 +10,7 @@ export default function header() {
 
     burger.addEventListener('click', () => {
         burger.classList.toggle('active');
+        header.classList.toggle('active');
         nav.classList.toggle('active');
 
         if (burger.classList.contains('active')) {

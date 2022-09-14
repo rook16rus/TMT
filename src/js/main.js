@@ -15,6 +15,7 @@ import intro from "./build-in/intro";
 import fancybox from "./build-in/fancybox";
 import contactsMap from "./build-in/contactsMap";
 import header from "./build-in/header";
+import cancelDownloadImg from "./build-in/cancelDownloadImg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     intro();
     fancybox();
     contactsMap();
+    cancelDownloadImg();
 
     // custom
     initSliders();

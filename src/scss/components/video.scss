@@ -47,8 +47,8 @@
 
     @include breakpoint(mobile) {
       grid-template-columns: 1fr;
-      gap: 2.7rem;
-      padding-bottom: 2.7rem;
+      gap: 1rem;
+      padding-bottom: 1rem;
     }
   }
 
@@ -86,8 +86,6 @@
   }
 
   &__title {
-    margin-bottom: 1rem;
-
     @extend %fs-t1;
     font-weight: 400;
 

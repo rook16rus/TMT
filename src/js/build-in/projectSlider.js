@@ -4,49 +4,17 @@ Swiper.use([Navigation, EffectFade, Autoplay, Pagination, HashNavigation, Grid, 
 
 
 export default function projectSlider() {
-    const currentSlider = document.querySelector('.portfolio-single__current-img');
+    if (matchMedia('(max-width: 640px)').matches) {
+        const portfolioSingle = document.querySelector('.portfolio-single');
+        if (!portfolioSingle) return;
 
-    if (!currentSlider) return
-
-    const gallery = new Swiper('.portfolio-single__gallery', {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        breakpoints: {
-            1024: {
-                slidesPerView: 5,
+        const swiper = new Swiper('.portfolio-single__gallery-container', {
+            slidesPerView: 1,
+            autoHeight: true,
+            navigation: {
+                nextEl: portfolioSingle.querySelector('.js-next-slide'),
+                prevEl: portfolioSingle.querySelector('.js-prev-slide'),
             },
-            768: {
-                slidesPerView: 3,
-            }
-        },
-        on: {
-            touchEnd: function(s,e) {
-                let range = 5;
-                let diff = s.touches.diff = s.isHorizontal() ? s.touches.currentX - s.touches.startX : s.touches.currentY
-                    - s.touches.startY;
-                if (diff < range || diff > -range) s.allowClick = true;
-            }
-        }
-    });
-
-    new Swiper(`.${currentSlider.classList[0]}`, {
-        autoHeight: true,
-        thumbs: {
-            swiper: gallery
-        },
-        spaceBetween: 12,
-        breakpoints: {
-            380: {
-                autoHeight: false,
-                grid: {
-                    rows: 1
-                },
-                spaceBetween: 0,
-            }
-        },
-        navigation: {
-            nextEl: currentSlider.querySelector('.js-next-slide'),
-            prevEl: currentSlider.querySelector('.js-prev-slide'),
-        },
-    })
+        })
+    }
 }

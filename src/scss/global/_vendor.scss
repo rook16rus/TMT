@@ -107,7 +107,11 @@
 }
 
 .fancybox__toolbar {
-    display: none;
+    background: none;
+
+    *:not(.fancybox__button--close, .fancybox__button--close *, .fancybox__toolbar__items--right) {
+        display: none;
+    }
 }
 
 .fancybox__thumbs {
@@ -120,14 +124,14 @@
 
 .fancybox__nav .carousel__button.is-next {
     right: 25rem;
-    transform: rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
 }
 
 .fancybox__nav .carousel__button.is-prev {
     left: 25rem;
 }
 
-.carousel__button {
+.carousel__button.is-next, .carousel__button.is-prev {
     width: 2rem;
     height: 5.7rem;
 
