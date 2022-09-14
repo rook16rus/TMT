@@ -49,7 +49,7 @@
 
     @include breakpoint(mobile) {
       padding: 0.7rem 0;
-      margin-bottom: 2.7rem;
+      margin-bottom: 2.5rem;
 
       border-top: 1px solid var(--border-color);
       border-bottom: 1px solid var(--border-color);
@@ -300,8 +300,8 @@
     }
 
     @include breakpoint(mobile) {
-      gap: 2.7rem;
-      padding: 2.7rem 0;
+      gap: 2.5rem;
+      padding: 2.5rem 0;
     }
   }
 
