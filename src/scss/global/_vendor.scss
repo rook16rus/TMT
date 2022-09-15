@@ -122,6 +122,10 @@
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+.fancybox__content .carousel__button.is-close {
+    right: -0.9rem;
+}
+
 .fancybox__nav .carousel__button.is-next {
     right: 25rem;
     transform: translateY(-50%) rotate(180deg);
