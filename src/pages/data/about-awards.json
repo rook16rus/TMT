@@ -1,4 +1,5 @@
 {
+  "footerNone": true,
   "menu": [
     {
       "link": "about.html",
@@ -29,11 +30,6 @@
   "aboutNav": [
     {
       "name": "Мастерская",
-      "active": false,
-      "href": "about.html"
-    },
-    {
-      "name": "Биография",
       "active": false,
       "href": "about.html"
     },
