@@ -141,7 +141,7 @@
     width: 43.5rem;
     aspect-ratio: 435 / 650;
 
-    @include breakpoint(tablet) {
+    @media (max-width: 1200px) {
       position: relative;
       top: 0;
     }
@@ -188,6 +188,8 @@
 
   &__author-mobile-block {
     @extend .about__author-block;
+
+    display: none;
 
     @include breakpoint(mobile) {
       display: flex;
