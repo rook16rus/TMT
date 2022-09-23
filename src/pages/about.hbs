@@ -42,13 +42,20 @@
                                 </div>
                                 <div class="about__author-mobile-block js-accordion">
                                     <h2 class="about__author-title section-title js-accordion-btn">Гульсинэ и Виктор Токаревы</h2>
-                                    <ul class="about__author-achievements-list js-accordion-content">
-                                        {{#each allAchievements }}
-                                            <li class="about__author-achievement">
+                                    <div class="about__author-achievements-list js-accordion-content">
+                                        <h3 class="about__author-subtitle">Виктор Степанович Токарев</h3>
+                                        {{#each viktorAchievements }}
+                                            <div class="about__author-achievement">
                                                 {{{this.text}}}
-                                            </li>
+                                            </div>
                                         {{/each}}
-                                    </ul>
+                                        <h3 class="about__author-subtitle">Гульсинэ Шавкатовна Токарева</h3>
+                                        {{#each gulsineAchievements }}
+                                            <div class="about__author-achievement">
+                                                {{{this.text}}}
+                                            </div>
+                                        {{/each}}
+                                    </div>
                                 </div>
                             </div>
                         </div>
