@@ -128,7 +128,7 @@
 
     @include breakpoint(mobile) {
       margin-bottom: 0;
-      gap: 4rem;
+      gap: 2.4rem;
     }
   }
 
@@ -180,10 +180,11 @@
     }
 
     @include breakpoint(mobile) {
-      margin-left: -2rem;
-
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
       width: 100%;
-      aspect-ratio: 375 / 560;
+      aspect-ratio: auto;
     }
 
     img {
@@ -191,9 +192,8 @@
       height: 100%;
 
       @include breakpoint(mobile) {
-        width: 100vw;
-        max-width: calc(100% + 4rem);
-        height: 100%;
+        max-width: none;
+        height: auto;
       }
     }
   }
@@ -255,6 +255,7 @@
 
     @include breakpoint(mobile) {
       gap: 1.6rem;
+      height: 0;
 
       .about__author-subtitle:not(:first-of-type) {
         margin-top: 1.6rem;
