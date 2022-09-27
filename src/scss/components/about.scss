@@ -69,6 +69,7 @@
 
     @include breakpoint(mobile) {
       flex-direction: row;
+      justify-content: center;
       gap: 3rem;
       overflow-x: auto;
       padding: 0;
@@ -164,6 +165,12 @@
     margin-top: 3.2rem;
 
     font-size: 1.8rem;
+
+    &:first-of-type {
+      padding-top: 1rem;
+      margin-top: 2.4rem;
+      border-top: 1px solid var(--border-color);
+    }
   }
 
   &__author-img {
@@ -203,10 +210,6 @@
     flex-direction: column;
     gap: 2rem;
     max-width: 66rem;
-
-    @include breakpoint(mobile) {
-      padding-right: 2rem;
-    }
   }
 
   &__author-block {
