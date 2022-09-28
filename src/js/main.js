@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
     accordions();
 
     // custom
-    initSliders();
     editableTextContainer();
 });
 
@@ -46,5 +45,9 @@ window.addEventListener('load', function () {
     header();
     document.body.classList.add('loaded');
     ScrollTrigger.refresh();
-    setTimeout(() => document.body.classList.add('animatable'), 300);
+    setTimeout(() => {
+        document.body.classList.add('animatable')
+        initSliders();
+    }, 300);
+
 });

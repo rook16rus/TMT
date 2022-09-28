@@ -125,3 +125,5 @@ export default function initSliders() {
     })
 
 }
+
+window.initSliders = initSliders;
