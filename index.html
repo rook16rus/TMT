@@ -100,19 +100,15 @@
                 let percentNumber = document.querySelector('.loader__percent-number');
 
                 const interval = setInterval(() => {
-                    const isPageInit = percentNumber.closest('.animatable');
-
-                    if (+percentNumber.innerHTML >= 95) {
-                        clearTimeout(interval)
-                    } else {
+                    if (+percentNumber.innerHTML < 95) {
                         percentNumber.innerHTML = +percentNumber.innerHTML + 1;
                     }
-
-                    if (isPageInit) {
-                        percentNumber.innerHTML = 100;
-                        clearTimeout(interval);
-                    }
                 }, 60)
+
+                window.addEventListener('load', () => {
+                    percentNumber.innerHTML = 100;
+                    clearTimeout(interval);
+                })
             </script>
 
             <header class="header">

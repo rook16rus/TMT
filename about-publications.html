@@ -100,19 +100,15 @@
                 let percentNumber = document.querySelector('.loader__percent-number');
 
                 const interval = setInterval(() => {
-                    const isPageInit = percentNumber.closest('.animatable');
-
-                    if (+percentNumber.innerHTML >= 95) {
-                        clearTimeout(interval)
-                    } else {
+                    if (+percentNumber.innerHTML < 95) {
                         percentNumber.innerHTML = +percentNumber.innerHTML + 1;
                     }
-
-                    if (isPageInit) {
-                        percentNumber.innerHTML = 100;
-                        clearTimeout(interval);
-                    }
                 }, 60)
+
+                window.addEventListener('load', () => {
+                    percentNumber.innerHTML = 100;
+                    clearTimeout(interval);
+                })
             </script>
 
             <header class="header">
@@ -238,7 +234,9 @@
                                     </li>
                                     <li class="about__publication">
                                         <a class="about__publication-link" href="#">
-                                            <h3 class="about__publication-title">Жилой комплекс «Панорама» на Чистопольской улице</h3><span class="about__publication-text">Проект Россия 81, 2016</span>
+                                            <h3 class="about__publication-title">Жилой комплекс «Панорама» на Чистопольской улице. Жилой комплекс
+                                                <br>«Панорама» на Чистопольской улице
+                                            </h3><span class="about__publication-text">Проект Россия 81, 2016</span>
                                         </a>
                                     </li>
                                     <li class="about__publication">
@@ -258,7 +256,9 @@
                                     </li>
                                     <li class="about__publication">
                                         <a class="about__publication-link" href="#">
-                                            <h3 class="about__publication-title">Жилой комплекс «Панорама» на Чистопольской улице</h3>
+                                            <h3 class="about__publication-title">Жилой комплекс «Панорама» на Чистопольской улице. Жилой комплекс
+                                                <br>«Панорама» на Чистопольской улице
+                                            </h3>
                                             <div class="about__publication-text">
                                                 <p class="about__publication-text">Проект Россия 81, 2016</p>
                                             </div>
