@@ -384,17 +384,17 @@
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
-
-    @include breakpoint(mobile) {
-      br {
-        display: none;
-      }
-    }
   }
 
   &__publication-title {
     font-size: 1.6rem;
     font-weight: 500;
+
+    @include breakpoint(small-tablet) {
+      br {
+        display: none;
+      }
+    }
 
     @include breakpoint(mobile) {
       font-size: 1.5rem;
