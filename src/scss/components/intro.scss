@@ -34,6 +34,10 @@
 
     &:hover {
       opacity: 1;
+      
+      .intro__title {
+        color: rgba(255,255,255,.8);
+      }
     }
   }
 
@@ -52,7 +56,10 @@
     font-weight: 700;
     font-size: 2.4rem;
     line-height: normal;
+
     color: var(--pale-white);
+
+    transition: color 0.3s;
 
     @include breakpoint(small-tablet) {
       width: 100%;

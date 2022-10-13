@@ -12,7 +12,7 @@
 
   &__wrapper {
     display: grid;
-    grid-template-columns: repeat(24, 1fr);
+    grid-template-columns: auto 1fr;
     gap: 2.4rem;
 
     @include breakpoint(small-tablet) {
@@ -29,11 +29,13 @@
   }
 
   &__nav {
-    grid-column: span 5;
-    min-width: 20rem;
+    min-width: 31.4rem;
+
+    @include breakpoint(laptop) {
+      min-width: 25.2rem;
+    }
 
     @include breakpoint(small-tablet) {
-      grid-column: 1 / -1;
       order: 1;
     }
   }
@@ -206,7 +208,6 @@
 
   &__body {
     max-width: 74.5rem;
-    grid-column: span 19;
 
     @include breakpoint(small-tablet) {
       display: contents;

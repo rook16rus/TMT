@@ -135,6 +135,18 @@
     left: 25rem;
 }
 
+.carousel__button::before {
+    content: '';
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 7rem;
+    height: 7rem;
+}
+
 .carousel__button.is-next, .carousel__button.is-prev {
     width: 2rem;
     height: 5.7rem;
