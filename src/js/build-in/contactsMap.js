@@ -37,8 +37,8 @@ function addMarker(coords, map, hint, markerIcon) {
     }, {
         iconLayout: 'default#image',
         iconImageHref: markerIcon,
-        iconImageSize: [40, 40],
-        iconImageOffset: [-20, -40]
+        iconImageSize: [60, 60],
+        iconImageOffset: [-30, -60]
     })
 
     map.geoObjects.add(marker);

@@ -135,6 +135,57 @@
     left: 25rem;
 }
 
+.carousel__button {
+    width: 4.2rem;
+    height: 4.2rem;
+
+    svg {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+}
+
+.fancybox__content>.carousel__button.is-close {
+    top: -4rem;
+}
+
+.fancybox__content {
+    @media (min-width: 3000px) {
+        transform: scale(1.2);
+    }
+
+    @media (min-width: 4000px) {
+        transform: scale(1.4);
+    }
+}
+
+.fancybox__carousel .fancybox__slide.has-html5video .fancybox__content, .fancybox__carousel .fancybox__slide.has-map .fancybox__content, .fancybox__carousel .fancybox__slide.has-pdf .fancybox__content, .fancybox__carousel .fancybox__slide.has-video .fancybox__content {
+    @media (min-width: 3000px) {
+        transform: scale(1.6);
+    }
+
+    @media (min-width: 4000px) {
+        transform: scale(2);
+        transform-origin: center;
+    }
+}
+
+.fancybox__nav .carousel__button.is-next {
+    right: 10rem;
+
+    @include breakpoint(small-tablet) {
+        display: none;
+    }
+}
+
+.fancybox__nav .carousel__button.is-prev {
+    left: 10rem;
+
+    @include breakpoint(small-tablet) {
+        display: none;
+    }
+}
+
 .carousel__button::before {
     content: '';
 

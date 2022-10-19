@@ -4,7 +4,7 @@ Swiper.use([Navigation, EffectFade, Autoplay, Pagination, HashNavigation, Grid, 
 
 
 export default function projectSlider() {
-    if (matchMedia('(max-width: 640px)').matches) {
+    if (matchMedia('(max-width: 768px)').matches) {
         const portfolioSingle = document.querySelector('.portfolio-single');
         if (!portfolioSingle) return;
 

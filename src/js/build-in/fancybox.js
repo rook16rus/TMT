@@ -22,7 +22,19 @@ export default function fancybox() {
         on: {
             load: (fancybox, slide) => {
                 window.initCancelDownloadImg();
-            },
+            },/*
+            reveal() {
+                const slides = this.$carousel.querySelectorAll('.fancybox__content');
+
+                slides.forEach(slide => {
+                    const img = slide.querySelector('img');
+
+                    slide.style.width = slide.clientWidth / 10 + 'rem';
+                    slide.style.height = slide.clientHeight / 10 + 'rem';
+                    img.style.width = img.clientWidth / 10 + 'rem';
+                    img.style.height = img.clientHeight / 10 + 'rem';
+                })
+            }*/
         },
     })
 }

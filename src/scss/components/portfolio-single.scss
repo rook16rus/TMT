@@ -271,6 +271,7 @@
     cursor: pointer;
 
     @include breakpoint(small-tablet) {
+      padding-top: 0;
       &:hover {
         opacity: 1;
       }
@@ -286,7 +287,11 @@
       object-fit: cover;
 
       @include breakpoint(small-tablet) {
+        position: static;
+
         object-fit: contain;
+        width: auto;
+        height: auto;
       }
     }
   }
