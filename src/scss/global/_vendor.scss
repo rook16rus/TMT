@@ -149,16 +149,6 @@
     top: -4rem;
 }
 
-.fancybox__content {
-    @media (min-width: 3000px) {
-        transform: scale(1.2);
-    }
-
-    @media (min-width: 4000px) {
-        transform: scale(1.4);
-    }
-}
-
 .fancybox__carousel .fancybox__slide.has-html5video .fancybox__content, .fancybox__carousel .fancybox__slide.has-map .fancybox__content, .fancybox__carousel .fancybox__slide.has-pdf .fancybox__content, .fancybox__carousel .fancybox__slide.has-video .fancybox__content {
     @media (min-width: 3000px) {
         transform: scale(1.6);

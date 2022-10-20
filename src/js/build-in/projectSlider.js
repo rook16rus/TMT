@@ -1,6 +1,6 @@
-import {Swiper, Navigation, EffectFade, Autoplay, Pagination, HashNavigation, Grid, FreeMode} from "swiper";
+import {Swiper, Navigation, EffectFade, Autoplay, Pagination, HashNavigation, Grid, FreeMode, Lazy} from "swiper";
 
-Swiper.use([Navigation, EffectFade, Autoplay, Pagination, HashNavigation, Grid, FreeMode]);
+Swiper.use([Navigation, EffectFade, Autoplay, Pagination, HashNavigation, Grid, FreeMode, Lazy]);
 
 
 export default function projectSlider() {
@@ -11,10 +11,15 @@ export default function projectSlider() {
         const swiper = new Swiper('.portfolio-single__gallery-container', {
             slidesPerView: 1,
             autoHeight: true,
+            preloadImages: false,
+            lazy: {
+                loadPrevNext: true,
+            },
             navigation: {
                 nextEl: portfolioSingle.querySelector('.js-next-slide'),
                 prevEl: portfolioSingle.querySelector('.js-prev-slide'),
-            },
+            }
+
         })
     }
 }
