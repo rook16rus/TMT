@@ -11,10 +11,6 @@ export default function projectSlider() {
         const swiper = new Swiper('.portfolio-single__gallery-container', {
             slidesPerView: 1,
             autoHeight: true,
-            preloadImages: false,
-            lazy: {
-                loadPrevNext: true,
-            },
             navigation: {
                 nextEl: portfolioSingle.querySelector('.js-next-slide'),
                 prevEl: portfolioSingle.querySelector('.js-prev-slide'),
