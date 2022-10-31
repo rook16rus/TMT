@@ -4,9 +4,11 @@
 
   &__wrapper {
     display: grid;
-    grid-template-columns: repeat(24, 1fr);
+    grid-template-columns: auto 1fr;
     gap: 2.4rem;
     height: 100%;
+
+    overflow: hidden;
 
     @include breakpoint(small-tablet) {
       grid-template-columns: 1fr;
@@ -19,10 +21,14 @@
   }
 
   &__info {
-    grid-column: span 5;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    min-width: 31.4rem;
+
+    @include breakpoint(laptop) {
+      min-width: 25.2rem;
+    }
 
     @include breakpoint(small-tablet) {
       display: grid;
@@ -60,13 +66,9 @@
   }
 
   &__body {
-    grid-column: span 19;
-
-
     @include breakpoint(small-tablet) {
       position: relative;
 
-      grid-column: 1 / -1;
       width: 100%;
       max-width: 100%;
       height: 56.5rem;

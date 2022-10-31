@@ -31,25 +31,29 @@
 
   &__wrapper {
     display: grid;
-    grid-template-columns: repeat(24, 1fr);
+    grid-template-columns: auto 1fr;
     gap: 2.4rem;
 
-    @include breakpoint(mobile) {
+    @include breakpoint(small-tablet) {
       display: block;
     }
   }
 
   &__nav {
-    grid-column: span 5;
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    min-width: 31.4rem;
+
+    @include breakpoint(laptop) {
+      min-width: 25.2rem;
+    }
 
     @include breakpoint(small-tablet) {
       gap: 2.4rem;
     }
 
-    @include breakpoint(mobile) {
+    @include breakpoint(small-tablet) {
       padding: 0.7rem 0;
       margin-bottom: 2.5rem;
 
@@ -59,7 +63,7 @@
   }
 
   &__title {
-    @include breakpoint(mobile) {
+    @include breakpoint(small-tablet) {
       display: none;
     }
   }
@@ -69,7 +73,7 @@
     flex-direction: column;
     gap: 1.5rem;
 
-    @include breakpoint(mobile) {
+    @include breakpoint(small-tablet) {
       flex-direction: row;
       justify-content: center;
       gap: 3rem;
@@ -109,7 +113,6 @@
   }
 
   &__body {
-    grid-column: span 19;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

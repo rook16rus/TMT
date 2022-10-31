@@ -8,7 +8,7 @@
 
   &__wrapper {
     display: grid;
-    grid-template-columns: repeat(24, 1fr);
+    grid-template-columns: auto 1fr;
     gap: 2.4rem;
 
     @include breakpoint(small-tablet) {
@@ -16,12 +16,15 @@
     }
   }
 
-  &__body {
-    grid-column: 6 / -1;
-  }
-
   &__main-title {
-    display: none;
+    display: block;
+    min-width: 31.4rem;
+
+    font-size: 0;
+
+    @include breakpoint(laptop) {
+      min-width: 25.2rem;
+    }
 
     @include breakpoint(small-tablet) {
       display: block;
